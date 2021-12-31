@@ -14,4 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ./.github/actions/just-echo
+      - name: Just say echo to see if it work
+        run: echo it worked
+        shell: bash
