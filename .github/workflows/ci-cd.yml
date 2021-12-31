@@ -13,4 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions/just-echo
+      - name: Just say echo to see if it work
+        run: echo it worked
+        shell: bash
