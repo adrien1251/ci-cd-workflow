@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ./.github/actions/just-echo
+      - uses: adrien1251/ci-cd-workflow/.github/actions/just-echo
