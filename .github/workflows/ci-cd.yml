@@ -1,0 +1,16 @@
+name: CI/CD
+
+on:
+  workflow_call:
+    secrets:
+      NPM_TOKEN:
+        required: false
+
+env:
+  ENV_FILE: .ci-cd.env
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/just-echo

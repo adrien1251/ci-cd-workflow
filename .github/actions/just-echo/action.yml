@@ -1,0 +1,6 @@
+runs:
+  using: "composite"
+  steps:
+    - name: Just say echo to see if it work
+      run: echo it worked
+      shell: bash
